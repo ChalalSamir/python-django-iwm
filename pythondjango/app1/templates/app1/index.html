@@ -1,0 +1,12 @@
+{% if questions %}
+<ul>
+    {% for question in questions %}
+    <li>
+        <p>{{question.text}}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>pas d'app</p>
+{% endif %}
+
